@@ -1,0 +1,518 @@
+/* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #1a1a1a; /* preto escuro */
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #d6336c, #6a1b9a); /* rosa para roxo */
+      padding: 20px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+      font-weight: 700;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f48fb1; /* rosa claro */
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ce93d8; /* roxo claro */
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      color: #d6336c;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-bottom: 3px solid #6a1b9a;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Inicial */
+    #home {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    #home h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      color: #f48fb1;
+    }
+
+    /* Produtos/Serviços */
+    .products-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background: #2e2e2e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #6a1b9a;
+      transition: transform 0.3s ease;
+      height: 200px;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card h3 {
+      color: #d6336c;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    .product-card2 {
+      background: #2e2e2e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #6a1b9a;
+      transition: transform 0.3s ease;
+      height: 400px;
+    }
+
+    .product-card2:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card2 h3 {
+      color: #d6336c;
+      margin-bottom: 10px;
+    }
+
+    .product-card2 p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    /*estilo do texto projetos*/
+
+    .projetos-text {
+      color: white;
+      text-decoration: none;
+    }
+
+    .botao-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.botao-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #6a1b9a; /* rosa principal */
+  color: #fff;
+  padding: 15px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 102, 204, 0.3);
+  margin: 10px;
+  width: 220px;
+}
+
+.botao-download:hover {
+  background-color: #b84d99; /* tom roxo escuro */
+  transform: scale(1.05);
+}
+
+.botao-download .icon-download {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+/*estilo contato*/
+#contato {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#contato form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contato input,
+#contato textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+#contato input::placeholder,
+#contato textarea::placeholder {
+  color: #aaa;
+}
+
+/* Botão com ícone do WhatsApp */
+.whatsapp-btn {
+  background-color: #6a1b9a;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 150px;
+  width: 200px;
+}
+
+.icon-whatsapp {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/**/
+
+#team {
+  text-align: center;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #6a1b9a;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #d6336c;
+}
+
+.team-card h3 {
+  color: #f48fb1;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Seção de Colaboradores */
+#team {
+  text-align: center;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background-color: #2e2e2e;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #6a1b9a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px #d6336c;
+}
+
+.team2-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #d6336c;
+  margin-left: 300px;
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #d6336c;
+}
+
+.team-card h3 {
+  color: #f48fb1;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  filter: invert(90%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+  filter: invert(60%) sepia(1) hue-rotate(270deg) saturate(200%);
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 24px;
+  color: #ff66cc; /* rosa */
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-social li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+  transition: transform 0.3s ease;
+}
+
+.footer-social li a:hover {
+  transform: scale(1.2);
+}
+
+.footer-social svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  margin: 40px auto;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Cada slide */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Paginação (os pontinhos) */
+.swiper-pagination {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  transition: background 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff007a;
+}
+
+/* Botões de navegação (setas) */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .swiper {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav a {
+    padding: 10px 0;
+  }
+
+  .products-list,
+  .team-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  .product-card,
+  .product-card2,
+  .team-card {
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+}
